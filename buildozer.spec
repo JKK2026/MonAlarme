@@ -5,6 +5,25 @@ title = Mon Alarme
 # (str) Package name
 package.name = monalarme
 
+# ... others lines ...
+version = 0.1
+# ou version = 1.0.0
+
+git add buildozer.spec
+git commit -m "Fix buildozer.spec: add version 0.1"
+git push origin main  # ou ta branche
+
+# ... ton code existant ...
+
+# (str) Permet de preserver les données entre mises à jour
+android.add_src = src
+
+# (str) Icone de l'app (crée un dossier 'icones' avec tes icônes)
+icon.filename = %(source.dir)s/icones/icône.png
+
+# (str) Nom du fichier APK généré
+p4a.branch = master
+
 # (str) Package domain (needed for android packaging)
 package.domain = org.test
 
