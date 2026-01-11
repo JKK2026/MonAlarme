@@ -1,5 +1,5 @@
-name: CI
+name: Kivy APK
 on: [push]
 jobs:
-  test:
+  build:
     runs-on
