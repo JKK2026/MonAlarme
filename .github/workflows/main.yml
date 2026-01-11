@@ -60,7 +60,12 @@ jobs:
         run: |
           pip install --upgrade pip setuptools wheel
           pip install Cython==0.29.33 buildozer==1.5.0
-
+          
+      - name: Create build-tools symlink
+        run: |
+          mkdir -p /home/runner/.buildozer/android/platform/android-sdk/build-tools/30.0.3
+          find $ANDROID_SDK_ROOT/build
+      
       - name: Build APK
         run: |
           echo "ANDROID_SDK_ROOT=$ANDROID_SDK_ROOT"
