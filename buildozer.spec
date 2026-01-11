@@ -25,7 +25,7 @@ orientation = portrait
 fullscreen = 1
 
 # (list) Permissions
-android.permissions = INTERNET, WAKE_LOCK
+android.permissions = INTERNET, WAKE_LOCK,SCHEDULE_EXACT_ALARM
 
 # (int) Android API to use
 android.api = 31
