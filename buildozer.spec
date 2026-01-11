@@ -8,6 +8,12 @@ package.name = monalarme
 # ... others lines ...
 version = 0.1
 # ou version = 1.0.0
+# ... tes lignes existantes ...
+
+# Force les chemins Android pour GitHub Actions
+android.sdk_path = /home/runner/.buildozer/android/platform/android-sdk
+android.ndk_path = /home/runner/.buildozer/android/platform/android-ndk-r25c
+android.accept_sdk_license = True
 
 git add buildozer.spec
 git commit -m "Fix buildozer.spec: add version 0.1"
